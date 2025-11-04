@@ -1,3 +1,5 @@
+import { loginWithGoogle, logout, onReady } from "./firebase.js";
+
 function calcular() {
   const ganancia = parseFloat(document.getElementById("ganancia").value);
   if (isNaN(ganancia)) {
@@ -11,3 +13,4 @@ function calcular() {
   document.getElementById("resultado").innerText =
     `Uber considera $${efectivo.toFixed(2)} para calcular tu salario base.`;
 }
+
