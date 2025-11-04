@@ -1,4 +1,4 @@
-// IMPORTS (Firebase v10 CDN)
+// IMPORTS (Firebase v10+ CDN)
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
 import {
   getAuth, onAuthStateChanged, GoogleAuthProvider,
@@ -8,14 +8,15 @@ import {
   getFirestore, doc, setDoc, getDoc, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-firestore.js";
 
-// 🔹 Pega tu configuración aquí ↓ (de Firebase console)
+// 🔹 Tu configuración real de Firebase
 const firebaseConfig = {
-  apiKey: "TU_API_KEY",
-  authDomain: "TU_PROJECT_ID.firebaseapp.com",
-  projectId: "TU_PROJECT_ID",
-  storageBucket: "TU_PROJECT_ID.appspot.com",
-  messagingSenderId: "XXXXXXXXXXX",
-  appId: "1:XXXXXXXXXXX:web:XXXXXXXXXXXX"
+  apiKey: "AIzaSyDew-FRJUd7kscx51_OvKrVt2PPoqhEHV0",
+  authDomain: "uberdriverstats.firebaseapp.com",
+  projectId: "uberdriverstats",
+  storageBucket: "uberdriverstats.firebasestorage.app",
+  messagingSenderId: "591109495",
+  appId: "1:591109495:web:b112d8edd2008495699572",
+  measurementId: "G-6JVRB2N22K"
 };
 
 // Inicializa Firebase
